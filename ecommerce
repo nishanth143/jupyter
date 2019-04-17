@@ -1,0 +1,53 @@
+import pandas as pd
+data=pd.read_csv('ecommerce.csv')
+print("Welcome to Ecommerce Online Shopping:")
+print("Enter the Username which you want to Continue:")
+p=input()
+print("Enter the Password for the given Username:")
+l=input()
+print("You are Succesfully Logged in and Hope you Enjoy your Shopping")
+print("Please Enter a Number to Prove that You are Not a Robot")
+f=int(input())
+i=0
+print("Enter the Name of the Item you want to Search")
+while(i!=f):
+    df=input()
+    print(data[data['product_name']==df])
+    i+=1
+print("What Percent have you Satisfied Personally with our Website")
+print("-----------------Rate your Experience From 1 to 5---------------")
+print("1 means Not Satiefied")
+print("5 means Highly Satisfied")
+ch=int(input())
+if(ch==5):
+       print("Hurrah...We are so Glad for your Feedback")
+elif(ch==4):
+       print("We are Happy to Know your Feedbaack")
+elif(ch==3):
+       print("We are Glad to Receive your Response")
+elif(ch==2):
+       print("We are Sooo Sorry .....We will Try our Level Best to Satisfy You")
+elif(ch==1):
+       print("We Sincerely Apoligize for our Inconvince and Hope we Improve our Facilities")
+print("We Humbly Request you to give us Some Suggestions to Improve Our Service")
+s=input()
+print("Happy to Receive your Suggestions We Will Try to Implement Them")
+print("Thank You for Shopping and Hope you Visit Again")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
